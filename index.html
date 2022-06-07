@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Temperley</title>
 </head>
 
@@ -33,11 +34,11 @@
 
     <main>
         <div>
-            <h1>Sitio oficial del C.A.Temperley</h1>
-            <h2 class="subtitulo">¡Arriba el negro!</h2>
+            <h1 data-aos="zoom-in">Sitio oficial del C.A.Temperley</h1>
+            <h2 class="subtitulo" data-aos="zoom-in">¡Arriba el negro!</h2>
         </div>
 
-        <img class="cat" src="./img/cat3.jpg" alt="">
+        <img class="cat" data-aos="fade-right" src="./img/cat3.jpg" alt="">
 
 
 
@@ -47,6 +48,16 @@
         <p class="direccion">Ayacucho 2167, Rosario, Santa Fe </p>
         <p class="copy">&copy Club Atletico Temperley</p>
     </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

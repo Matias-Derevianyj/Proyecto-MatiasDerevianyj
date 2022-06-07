@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../estilos/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -38,16 +39,16 @@
         <h2 class="subtitulo2" >Fotos del club</h2>
         <div class="contenedor-img">
             <div class="img img-ancha">
-                <img src="../img/pileta.jpg" alt="">
+                <img data-aos="flip-down" src="../img/pileta.jpg" alt="">
             </div>
             <div class="img">
-                <img src="../img/cat6.jpg" alt="">
+                <img data-aos="flip-down" src="../img/cat6.jpg" alt="">
             </div>
             <div class="img">
-                <img src="../img/negro.jpg" alt="">
+                <img data-aos="flip-down" src="../img/negro.jpg" alt="">
             </div>
             <div class="img img-larga">
-                <img src="../img/cat4.jpg" alt="">
+                <img data-aos="flip-down" src="../img/cat4.jpg" alt="">
             </div>
         </div>
     </section>
@@ -58,6 +59,13 @@
         <p class="direccion">Ayacucho 2167, Rosario, Santa Fe </p>
         <p class="copy">&copy Club Atletico Temperley</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
 
 </html>
