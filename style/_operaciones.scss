@@ -1,0 +1,38 @@
+$redes: (
+       twitter: #55aCee,
+       facebook:#3a5795,
+       instagram:#C25E30,
+);
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;    
+    }
+}
+
+.redsocial {
+    border: 2px solid blue;
+    background-color: gray;
+}
+
+.redsocial--social{
+    @extend .redsocial;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-radius: 5px;
+}
+.redsocial--nueva{
+    @extend .redsocial;
+    font-size: 30px;
+    color: green;
+    border: 3px dashed blue;
+}
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;   
+}
+
+.my_mixin{
+    @include sizes(500px,50px);
+    background-color: rgb(134, 24, 24);
+}

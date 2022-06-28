@@ -29,6 +29,41 @@ header li a .bg-propio .nav-item a .nav-item a:hover {
   color: gray !important;
 }
 
+.btn--twitter {
+  background-color: #55aCee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #C25E30;
+}
+
+.redsocial, .redsocial--nueva, .redsocial--social {
+  border: 2px solid blue;
+  background-color: gray;
+}
+
+.redsocial--social {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border-radius: 5px;
+}
+
+.redsocial--nueva {
+  font-size: 30px;
+  color: green;
+  border: 3px dashed blue;
+}
+
+.my_mixin {
+  height: 50px;
+  width: 500px;
+  background-color: rgb(134, 24, 24);
+}
+
 section {
   background-color: white;
 }
