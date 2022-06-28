@@ -29,6 +29,13 @@ header li a .bg-propio .nav-item a .nav-item a:hover {
   color: gray !important;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 section {
   background-color: white;
 }
@@ -39,8 +46,8 @@ section {
   display: grid;
   grid-template-areas: "direccion" "copy";
   justify-content: center;
-  grid-gap: 1rem;
   padding: 1rem;
+  margin-top: auto;
 }
 
 .copy {
@@ -51,16 +58,6 @@ section {
 .direccion {
   color: white;
   grid-area: direccion;
-}
-
-h1 {
-  padding-left: 750px;
-  margin-top: 50px;
-}
-
-.subtitulo {
-  padding-left: 865px;
-  margin-bottom: 50px;
 }
 
 .cat1 {
@@ -74,10 +71,6 @@ h1 {
 h2 {
   margin-top: 25px;
   padding-left: 10px;
-}
-
-.parrafo2 {
-  margin-top: 25px;
 }
 
 .cat2 {
@@ -95,14 +88,6 @@ legend {
 
 .cat3 {
   margin-top: 20px;
-}
-
-.galeria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
 }
 
 .contenedor-img {
@@ -126,6 +111,14 @@ legend {
 
 .img-larga {
   grid-column-start: span 2;
+}
+
+.mx-auto {
+  margin-bottom: 30px;
+}
+
+.socio {
+  padding-left: 2%;
 }
 
 @media screen and (max-width: 500px) {
