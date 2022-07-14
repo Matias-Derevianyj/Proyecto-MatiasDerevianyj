@@ -8,11 +8,9 @@ html {
   font-size: 62, 5%;
 }
 
-header {
-  background-color: black;
-}
 header li {
-  padding-left: 200px;
+  text-align: center;
+  min-width: 350px;
   display: inline-block;
   font-size: x-large;
 }
@@ -30,14 +28,11 @@ header li a .bg-propio .nav-item a .nav-item a:hover {
 }
 
 body {
+  background-image: linear-gradient(0deg, #ffffff 0%, #000000 100%);
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-section {
-  background-color: white;
 }
 
 .pie-de-pagina {
@@ -53,11 +48,13 @@ section {
 .copy {
   grid-area: copy;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .direccion {
   color: white;
   grid-area: direccion;
+  text-align: center;
 }
 
 .cat1 {
@@ -121,21 +118,217 @@ legend {
   padding-left: 2%;
 }
 
+.buttons {
+  min-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
+.form-register {
+  width: 400px;
+  background: #000000;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid gray;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: gray;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+.slider-frame {
+  width: 1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  -webkit-animation: slide 20s infinite alternate ease-in-out;
+          animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-frame img {
+  width: 100%;
+}
+
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
 @media screen and (max-width: 500px) {
+  .slider-frame {
+    width: 500px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .buttons {
+    min-width: 400px;
+  }
   h2 {
     padding-left: 50px;
     margin-top: 50px;
   }
-
   .subtitulo2 {
     padding-left: 1px;
     margin-bottom: 50px;
   }
-
   .cat {
     flex-direction: column;
   }
-
+  .galery {
+    padding-left: 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-frame {
+    width: 500px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .buttons {
+    min-width: 400px;
+  }
+  h2 {
+    padding-left: 50px;
+    margin-top: 50px;
+  }
+  .subtitulo2 {
+    padding-left: 1px;
+    margin-bottom: 50px;
+  }
+  .cat {
+    flex-direction: column;
+  }
+  .galery {
+    padding-left: 190px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .slider-frame {
+    width: 500px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .buttons {
+    min-width: 400px;
+  }
+  h2 {
+    padding-left: 50px;
+    margin-top: 50px;
+  }
+  .subtitulo2 {
+    padding-left: 1px;
+    margin-bottom: 50px;
+  }
+  .cat {
+    flex-direction: column;
+  }
   .galery {
     padding-left: 190px;
   }

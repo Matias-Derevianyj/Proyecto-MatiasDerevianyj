@@ -9,9 +9,10 @@
   }
   
   header {
-    background-color: black;
+    
     li {
-        padding-left: 200px;
+      text-align: center;
+        min-width: 350px;
         display: inline-block;
         font-size: x-large;
         a {
